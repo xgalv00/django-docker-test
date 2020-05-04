@@ -1,0 +1,6 @@
+FROM python:3
+COPY . /code
+cd /code
+pip install -r requirements.txt
+RUN chmod 777 /code/run_server.sh
+CMD /code/run_server.sh
